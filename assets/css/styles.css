@@ -1,0 +1,49 @@
+:root {
+    /* Basic colors */
+    --black: #15191C;
+    --gray-90: #1D232A;
+    --gray-80: #2C343A;
+    --gray-50: #95999C;
+    --gray-20: #D5D5D5;
+    --gray-10: #E7E7E7;
+    --gray-5: #F3F3F3;
+    --white: #FFFFFF;
+    /* Highlights colors */
+    --blue: #0480DC;
+    --blue-secondary: #0063AC;
+    --blue-secondary-2: #004B83; 
+    /* Semantic colors */
+    --red: #F83636;
+    --green: #1AB060;
+    /* Font main */
+    --font-main: 'Open Sans', sans-serif; 
+}
+
+/* --------------------- general styles */
+body {
+    background-color: var(--gray-90);
+    font-family: var(--font-main);
+    color: var(--white);
+}
+
+/* --------------------- header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color:var(--black);
+    padding: .5rem 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.header__menu {
+
+}
+
+.header__logo {
+    width: 2.4325rem;
+}
+
+.header__notification {
+
+}
