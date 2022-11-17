@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "icones";
+    src: url(../font/icones.ttf);
+}
+
 :root {
     /* Basic colors */
     --black: #15191C;
@@ -16,7 +21,7 @@
     --red: #F83636;
     --green: #1AB060;
     /* Font main */
-    --font-main: 'Open Sans', sans-serif; 
+    --font-main: 'Open Sans', "icones", sans-serif; 
 }
 
 /* --------------------- general styles */
@@ -36,14 +41,87 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
-.header__menu {
-
-}
-
 .header__logo {
     width: 2.4325rem;
 }
 
-.header__notification {
+.header__menu span::before {
+    content: "\e904";
+    font-size: 1.5rem;
+}
 
+.header__notification span::before {
+    content: "\e906";
+    font-size: 1.5rem;
+}
+
+
+/* --------------------- side menu styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 75vw;
+    height: 100vh;
+    left: 0;
+    transition: .25s;
+    z-index: 99;
+}
+
+.sidebar--inactive {
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.sidebar__logo {
+    align-self: center;
+    width: 7.176rem;
+    padding: 1rem;
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    color: var(--gray-50);
+    height: 4rem;
+    padding-left: 4rem;
+}
+
+.sidebar__link--active {
+    color: var(--white);
+    padding-left: 3.5rem;
+    border-left: .5rem solid var(--white);
+}
+
+.sidebar__link::before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.sidebar__link--inicio::before {
+    content:"\e902";
+}
+
+.sidebar__link--videos::before {
+    content:"\e90e";
+}
+
+.sidebar__link--picos::before {
+    content:"\e909";
+}
+.sidebar__link--integrantes::before {
+    content:"\e903";
+}
+
+.sidebar__link--camisas::before {
+    content:"\e900";
+}
+
+.sidebar__link--pinturas::before {
+    content:"\e90a";
 }
