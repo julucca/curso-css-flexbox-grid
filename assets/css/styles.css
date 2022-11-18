@@ -129,11 +129,18 @@ body {
 /* --------------------- main styles */
 .main {
     padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1rem;
 }
 
 .page-title {
     font-size: 1.625rem;
     font-weight: 700;
+}
+
+.title-section {
+    font-weight: 700;
+    line-height: 1.5rem;
 }
 
 /* --------------------- cards styles */
@@ -142,14 +149,18 @@ body {
     border-radius: 16px;
     overflow: hidden;
     background-color: var(--gray-80);
+}
 
-    margin: 1rem 0;
+.card--highlights {
+   margin-bottom: 1rem; 
 }
 
 .card__content {
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    row-gap: .5rem;
+    column-gap: 1.5rem;
 }
 
 .card__highlight {
@@ -166,7 +177,6 @@ body {
     grid-column: span 2;
 
     line-height: 1.5rem;
-    padding: .5rem 0;
 }
 
 .card__profile {
@@ -184,8 +194,6 @@ body {
 .card__info {
     display: flex;
     align-items: center;
-
-    padding: .5rem 0;
 }
 
 .card__info--time::before {
@@ -198,6 +206,11 @@ body {
     margin-right: .5rem;
 }
 
+.card__info--price::before {
+    content: "\e905";
+    margin-right: .5rem;
+}
+
 .card__button {
     display: flex;
     justify-content: center;
@@ -206,11 +219,17 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 8px; 
-    font-size: .875rem;   
+    font-size: .875rem; 
+    justify-self: flex-end;  
 }
 
 .card__button--play::before {
     content: "\e90b";
+    font-size: 1.5rem;
+}
+
+.card__button--buy::before {
+    content: "\e901";
     font-size: 1.5rem;
 } 
 
@@ -221,4 +240,10 @@ body {
 
 .card__button--highlights::before {
     margin-right: .5rem;
+}
+
+.section {
+    display: grid;
+    gap: 1rem;
+    font-size: 1.125rem;
 }
