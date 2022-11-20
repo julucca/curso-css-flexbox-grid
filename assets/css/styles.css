@@ -73,6 +73,14 @@ body {
        grid-column: 2;
     }
 
+    .main-pico {
+        grid-template-areas:
+        "title-page title-page title-page"
+        "highlight-video highlight-video videos-recents"
+        "section-videos section-videos section-videos"
+        ;
+    }
+
     .page-title {
         grid-area: title-page;
     }

@@ -9,6 +9,16 @@
     line-height: 1.5rem;
 }
 
+.section-map__image--mobile {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.section-map__image--desktop {
+    display: none;
+}
+
 @media screen and (min-width: 1440px) {
     .section {
         grid-template-columns: repeat(4, auto);
@@ -19,5 +29,15 @@
         grid-column: span 4;
         font-size: 1.625rem;
         line-height: 2rem;
+    }
+
+
+    .section-map__image--mobile {
+        display: none;
+    }
+    
+    .section-map__image--desktop {
+        display: block;
+        width: 100%;
     }
 }

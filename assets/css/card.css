@@ -6,6 +6,11 @@
     background-color: var(--gray-80);
 }
 
+.card__image--section {
+    height: 10rem;
+    object-fit: cover;
+}
+
 .card__image--desktop {
     display: none;
 }
@@ -86,7 +91,12 @@
 .card__button--buy::before {
     content: "\e901";
     font-size: 1.5rem;
-} 
+}
+
+.card__button--map::before {
+    content: "\e908";
+    font-size: 1.5rem;
+}
 
 .card__button--highlights {
     width: 100%;
@@ -102,7 +112,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-
+    
     .card--highlights {
         margin-bottom: 0;
     }
