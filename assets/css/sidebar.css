@@ -1,0 +1,78 @@
+/* --------------------- sidebar styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 75vw;
+    height: 100vh;
+    left: 0;
+    transition: .25s;
+    z-index: 99;
+}
+
+.sidebar--inactive {
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.sidebar__logo {
+    align-self: center;
+    width: 7.176rem;
+    padding: 1rem;
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    color: var(--gray-50);
+    height: 4rem;
+    padding-left: 4rem;
+}
+
+.sidebar__link--active {
+    color: var(--white);
+    padding-left: 3.5rem;
+    border-left: .5rem solid var(--white);
+}
+
+.sidebar__link::before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.sidebar__link--inicio::before {
+    content:"\e902";
+}
+
+.sidebar__link--videos::before {
+    content:"\e90e";
+}
+
+.sidebar__link--picos::before {
+    content:"\e909";
+}
+.sidebar__link--integrantes::before {
+    content:"\e903";
+}
+
+.sidebar__link--camisas::before {
+    content:"\e900";
+}
+
+.sidebar__link--pinturas::before {
+    content:"\e90a";
+}
+
+@media screen and (min-width: 1440px) {
+    .sidebar {
+        position: static;
+        width: 12.75rem;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}
