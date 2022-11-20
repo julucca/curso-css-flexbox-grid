@@ -212,9 +212,24 @@ body {
     main {
        display: grid;
        grid-template-columns: auto 1fr auto; 
+       grid-template-areas:
+        "title-page title-page title-page"
+        "highlight-video highlight-video videos-recents"
+        "section-videos section-videos section-videos"
+        "products-recents highlight-product highlight-product"
+        "section-products section-products section-products"
+        ;
        column-gap: 2rem;
        padding: 1rem 3.75rem;
        grid-column: 2;
+    }
+
+    .page-title {
+        grid-area: title-page;
+    }
+
+    .title-section {
+        grid-column: span 4;
     }
 }
 
@@ -224,6 +239,10 @@ body {
     border-radius: 16px;
     overflow: hidden;
     background-color: var(--gray-80);
+}
+
+.card__image--desktop {
+    display: none;
 }
 
 .card--highlights {
@@ -322,14 +341,33 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+
+    .card--highlights {
+        margin-bottom: 0;
+    }
+
+    .card__image--desktop {
+        display: block;
+    }
+
+    .card__image--mobile {
+        display: none;
+    }
+
+    .card__button--highlights {
+        grid-column: auto;
+        padding: 1rem .5rem;
+    }
+
     .card--recent {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 1fr auto;
         align-items: center;
         row-gap: 1.5rem;
         width: 16rem;
         padding: 1rem;
         box-sizing: border-box;
+        align-self: flex-start;
     }
 
     .card--recent .card__title {
@@ -378,3 +416,36 @@ body {
     font-size: 1.125rem;
 }
 
+@media screen and (min-width: 1440px) {
+    .section {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+/* --------------------- grid-area styles */
+
+@media screen and (min-width: 1440px) {
+    .highlight-video {
+        grid-area: highlight-video;
+    }
+    
+    .videos-recents {
+        grid-area: videos-recents;
+    }
+    
+    .section-videos {
+        grid-area: section-videos;
+    }
+    
+    .highlight-product {
+        grid-area: highlight-product;
+    }
+    
+    .products-recents {
+        grid-area: products-recents;
+    }
+    
+    .section-products {
+        grid-area: section-products;
+    }
+}
