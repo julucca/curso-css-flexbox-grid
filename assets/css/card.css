@@ -24,17 +24,14 @@
 
 .card__highlight {
     grid-column: span 2;
-
     font-weight: 400;
     line-height: 2rem;
 }
 
 .card__title {
+    grid-column: span 2;
     font-size: 1.125rem;
     font-weight: 700;
-
-    grid-column: span 2;
-
     line-height: 1.5rem;
 }
 
@@ -45,7 +42,6 @@
 .card__profile, .card__info {
     color: var(--gray-50);
     font-size: .875rem;
-
     font-weight: 400;
     line-height: 1.5rem;
 }
@@ -119,9 +115,43 @@
         display: none;
     }
 
+    .card__highlight {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+
+    .card__title {
+        font-size: 1.625rem;
+        line-height: 2rem;
+    }
+
+    .card__title--desktop {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-bottom: 1.5rem;
+    }
+
+    .card__title--recent {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .card__button {
+        font-size: 1rem;  
+    }
+
     .card__button--highlights {
-        grid-column: auto;
         padding: 1rem .5rem;
+        width: 9.5rem;
+        justify-self: left;
+    }
+
+    .card__button--desktop {
+        width: 10.375rem;
     }
 
     .card--recent {
