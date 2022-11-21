@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZC | Vídeos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="header__menu" aria-label="Menu" data-menu><span></span></button>
+        <img src="../assets/img/logo.svg" alt="Logotipo da HZC" class="header__logo">
+        <!-- desktop version changes -->
+        <p class="header__profile">Bruno Lopes</p>
+        <!-- end of desktop version changes -->
+        <button class="header__notification" aria-label="Notificação"><span></span></button>
+    </header>
+
+    <nav class="sidebar sidebar--inactive" data-sidebar>
+        <img src="../assets/img/logo.svg" alt="Logo da HZC" class="sidebar__logo">
+        <a href="../index.html" class="sidebar__link sidebar__link--inicio">Início</a>
+        <a href="#" class="sidebar__link sidebar__link--videos sidebar__link--active">Vídeos</a>
+        <a href="./picos.html" class="sidebar__link sidebar__link--picos">Picos</a>
+        <a href="#" class="sidebar__link sidebar__link--integrantes">Integrantes</a>
+        <a href="#" class="sidebar__link sidebar__link--camisas">Camisas</a>
+        <a href="#" class="sidebar__link sidebar__link--pinturas">Pinturas</a>
+    </nav>
+
+    <main class="main main-picos">
+
+        <h2 class="page-title">Vídeos</h2>
+
+        <article class="card card--highlights highlight-video">
+            <img src="../assets/img/banner-mobile_1.png" alt="Banner do cartão" class="card__image card__image--mobile">
+            <img src="../assets/img/banner_1.png" alt="Banner do cartão" class="card__image card__image--desktop">
+            <div class="card__content">
+                <p class="card__highlight">Vídeo em destaque</p>
+                <h3 class="card__title">HZC - Life is... / 2021</h3>
+                <p class="card__profile">Bruno Lopes</p>
+                <p class="card__info card__info--time">33 minutos</p>
+                <p class="card__info card__info--views">53 visualizações</p>
+                <button class="card__button card__button--play card__button--highlights">Assistir agora</button>
+            </div>
+        </article>
+
+        <!-- desktop version changes -->
+        <article class="card card--recent videos-recents">
+            <h3 class="card__title--recent">Favoritos</h3>
+            <a href="#" class="card__link">Ver todos</a>
+            <ul class="card__list">
+                <li class="card__item">
+                    <img src="../assets/img/miniatura_1.png" alt="Thumbnail" class="card__item-thumbnail">
+                    <h4 class="card__item-title">HZC - Love Machine</h4>
+                    <p class="card__item-profile">Júlia Fonseca</p>
+                </li>
+                <li class="card__item">
+                    <img src="../assets/img/miniatura_2.png" alt="Thumbnail" class="card__item-thumbnail">
+                    <h4 class="card__item-title">HZC - Vol.3</h4>
+                    <p class="card__item-profile">Júlia Fonseca</p>
+                </li>
+                <li class="card__item">
+                    <img src="../assets/img/miniatura_3.png" alt="Thumbnail" class="card__item-thumbnail">
+                    <h4 class="card__item-title">HZC - Pescaria na Urca</h4>
+                    <p class="card__item-profile">Júlia Fonseca</p>
+                </li>
+                <li class="card__item">
+                    <img src="../assets/img/miniatura_4.png" alt="Thumbnail" class="card__item-thumbnail">
+                    <h4 class="card__item-title">Vidalocagi - Guerreiros do Asfalto</h4>
+                    <p class="card__item-profile">Júlia Fonseca</p>
+                </li>
+                <li class="card__item">
+                    <img src="../assets/img/miniatura_5.png" alt="Thumbnail" class="card__item-thumbnail">
+                    <h4 class="card__item-title">Vidalocagi - Não importa o nível</h4>
+                    <p class="card__item-profile">Júlia Fonseca</p>
+                </li>
+            </ul>
+        </article>
+        <!-- end of desktop version changes -->
+
+        <section class="section section-videos">
+            <h3 class="title-section">Vídeos mais vistos</h3>
+
+            <article class="card">
+                <img src="../assets/img/video_1.png" alt="Capa do vídeo HZC - Tudo sem Padrin" class="card__image--section">
+                <div class="card__content">
+                    <p class="card__profile">André Soares</p>
+                    <h3 class="card__title card__title--desktop">HZC - Tudo sem Padrin</h3>
+                    <p class="card__info card__info--time">33 minutos</p>
+                    <button class="card__button card__button--play" aria-label="Botão assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../assets/img/video_2.png" alt="Capa do vídeo HZC - Enter The Hu-flez" class="card__image--section">
+                <div class="card__content">
+                    <p class="card__profile">Bruno Lopes</p>
+                    <h3 class="card__title card__title--desktop">HZC - Enter The Hu-flez</h3>
+                    <p class="card__info card__info--time">33 minutos</p>
+                    <button class="card__button card__button--play" aria-label="Botão assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../assets/img/video_3.png" alt="Capa do vídeo HZC - Vol.3" class="card__image--section">
+                <div class="card__content">
+                    <p class="card__profile">Luiza Sampaio</p>
+                    <h3 class="card__title card__title--desktop">HZC - Vol.3</h3>
+                    <p class="card__info card__info--time">33 minutos</p>
+                    <button class="card__button card__button--play" aria-label="Botão assistir agora"></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="../assets/img/video_4.png" alt="Capa do vídeo Love Machine" class="card__image--section">
+                <div class="card__content">
+                    <p class="card__profile">Bruno Lopes</p>
+                    <h3 class="card__title card__title--desktop">Love Machine</h3>
+                    <p class="card__info card__info--time">33 minutos</p>
+                    <button class="card__button card__button--play" aria-label="Botão assistir agora"></button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
