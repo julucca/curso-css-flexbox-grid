@@ -2,6 +2,7 @@
 @import "./sidebar.css";
 @import "./card.css";
 @import "./section.css";
+@import "./article.css";
 
 @font-face {
     font-family: "icones";
@@ -50,35 +51,46 @@ body {
     gap: 1rem;
 }
 
+.main-article {
+    padding: 0;
+}
+
 .page-title {
     font-size: 1.625rem;
     font-weight: 700;
 }
 
 
+
 @media screen and (min-width: 1440px) {
     .main {
-       display: grid;
-       grid-template-columns: auto 1fr auto; 
-       grid-template-areas:
-        "title-page title-page title-page"
-        "highlight-video highlight-video videos-recents"
-        "section-videos section-videos section-videos"
-        "products-recents highlight-product highlight-product"
-        "section-products section-products section-products"
+        display: grid;
+        grid-template-columns: auto 1fr auto; 
+        grid-template-areas:
+            "title-page title-page title-page"
+            "highlight-video highlight-video videos-recents"
+            "section-videos section-videos section-videos"
+            "products-recents highlight-product highlight-product"
+            "section-products section-products section-products"
         ;
-       column-gap: 2rem;
-       row-gap: 1.5rem;
-       padding: 1.875rem 3.75rem;
-       grid-column: 2;
+        column-gap: 2rem;
+        row-gap: 1.5rem;
+        padding: 1.875rem 3.75rem;
+        grid-column: 2;
     }
 
-    .main-pico {
+    .main-picos {
         grid-template-areas:
-        "title-page title-page title-page"
-        "highlight-video highlight-video videos-recents"
-        "section-videos section-videos section-videos"
+            "title-page title-page title-page"
+            "highlight-video highlight-video videos-recents"
+            "section-videos section-videos section-videos"
         ;
+    }
+
+    .main-article {
+        grid-template-columns: auto auto; 
+        grid-template-areas:
+            "section-article section-place";
     }
 
     .page-title {
@@ -111,5 +123,13 @@ body {
     
     .section-products {
         grid-area: section-products;
+    }
+
+    .section-place {
+        grid-area: section-place;
+    }
+
+    .section-article {
+        grid-area: section-article;
     }
 }

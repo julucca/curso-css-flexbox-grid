@@ -19,6 +19,10 @@
     display: none;
 }
 
+.section-place {
+    display: none;
+}
+
 @media screen and (min-width: 1440px) {
     .section {
         grid-template-columns: repeat(4, auto);
@@ -31,7 +35,6 @@
         line-height: 2rem;
     }
 
-
     .section-map__image--mobile {
         display: none;
     }
@@ -39,5 +42,10 @@
     .section-map__image--desktop {
         display: block;
         width: 100%;
+    }
+
+    .section-place {
+        display: block;
+        width: 16rem;
     }
 }

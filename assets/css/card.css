@@ -56,6 +56,22 @@
     align-items: center;
 }
 
+.card__info--article {
+    color: var(--white);
+}
+
+.card__info--profile::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: .5rem;
+}
+
 .card__info--time::before {
     content: "\e90c";
     margin-right: .5rem;
@@ -212,5 +228,13 @@
     .card__item-profile {
         color: var(--gray-50);
         font-weight: 400;
+    }
+
+    .card-place {
+        margin-bottom: 1rem;
+    }
+
+    .card__info--article-views {
+        justify-self: right;
     }
 }
