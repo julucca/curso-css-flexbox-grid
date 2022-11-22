@@ -38,6 +38,11 @@
     height: 16rem;
 }
 
+.article__video--mobile {
+    width: 100%;
+    height: 12rem;
+}
+
 
 @media screen and (min-width: 1440px) {
     .article__image--mobile {
@@ -71,5 +76,11 @@
 
     .article__gallery {
         grid-column: auto;
+    }
+
+    .article__video {
+        border-radius: 1rem;
+        width: 832px;
+        height: 480px;
     }
 }
