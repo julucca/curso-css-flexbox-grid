@@ -15,8 +15,8 @@
 <p>Para este treinamento foram desenvolvidas as versões mobile e desktop do site, com base no layout disponibilizado no Figma.</p>
 
 <div style="display: inline_block" align="center">
-    <img width=300px src="./assets/img/git-desktop-version.png">
-    <img width=300px src="./assets/img/git-mobile-version.png">
+    <img width=425px src="./assets/img/git-desktop-version.png">
+    <img width=100px src="./assets/img/git-mobile-version.png">
 </div><br>
 
 <p>Neste projeto foi utilizada a metodologia de escrita BEM e componentes de CSS para reuso.</p>
@@ -24,7 +24,7 @@
 <h2>:computer: Tecnologias utilizadas</h2>
 
 <div>
-    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 </div>
